@@ -219,6 +219,10 @@ p {
   gap: 12px;
 }
 
+.contact-actions {
+  justify-content: flex-end;
+}
+
 .section-pad {
   padding: clamp(64px, 9vw, 120px) clamp(18px, 5vw, 72px);
 }
@@ -309,6 +313,25 @@ p {
 .contact-panel p,
 .video-copy p {
   color: var(--muted);
+}
+
+.contact-details {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.contact-details p {
+  margin-bottom: 0;
+}
+
+.contact-details strong {
+  color: var(--ink);
+}
+
+.contact-details a {
+  color: var(--teal);
+  font-weight: 800;
 }
 
 .video-section {
@@ -488,6 +511,10 @@ p {
 
   .contact-panel {
     grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
   }
 }
 
